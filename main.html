@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+        <title>All Rhoads Lead Home</title>
+        <style>
+            /* Justify the form text */
+            #request {
+                text-align: left;
+            }
+
+            /* Set the background to a texture */
+            body {
+                background:  url(https://i.imgur.com/MJAkxbh.png);
+            }
+
+            /* Set the form text elements */
+            input[type=text], select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */  
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* Set the form date elements */
+            input[type=date] {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */  
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */              
+            }
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+                background-color: rgb(255, 122, 122);
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, make the font bold and set a border */
+            input[type=submit]:hover {
+                animation-name: background-color;
+                animation-duration: 300ms;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes background-color {
+                100% {
+                    font-weight: bold;
+                    border: 1px;
+                }
+            }
+
+            /* Set the Page Title */
+            h1 {
+                font-size: 52px;
+                text-align: center;
+                font-family: Lobster, monospace;
+                color: rgb(255, 122, 122);
+            }
+
+            /* When moving the mouse over the page title, scale the page */
+            h1:hover {
+                transform: scale(1.1);
+            }
+
+            /* Set the legend font style */
+            legend {
+                text-align: center;
+                font-weight: bold;
+                font-size: 32px;
+            }
+
+            /* Set the link style */
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            /* When moving the mouse over the link, change the color */
+            a:hover {
+                color: rgb(255, 122, 122);
+            }
+
+            /* Set the form section to a relative position */
+            section {
+                position: relative;
+            }
+
+            /* Set the label font family to Oswald */
+            label {
+                font-family: Oswald, monospace;
+            }
+
+            /* Set the legend font family to Oswald */
+            legend {
+                font-family: Oswald, monospace;
+            }
+        </style>
+    </head>
+    <body>  
+        <header>
+            <a href="https://www.facebook.com/amanda.rhoads1"><h1>All Rhoads Lead Home</h1></a>
+        </header>
+        <main>
+            <section>
+                <form id="request">
+                    <fieldset>
+                        <legend>Request a Consultation</legend>
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Doe">
+                            <label for="email">Email Address:</label>
+                            <input type="text" id="email" name="email" placeholder="jdoe@gmail.com">
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" id="phone" name="phone" placeholder="123-456-7890">
+                            <label for="date">Requested Consultation Date:</label>
+                            <input type="date" id="date" name="date">
+                            <label for="details">Request Details:</label>
+                            <textarea id="details" name="details" placeholder="Please describe the nature of your request." style="height:200px"></textarea>
+                            <input type="submit" name="submit" value="Submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
