@@ -1,0 +1,112 @@
+/* Justify the form text */
+#request {
+    text-align: left;
+}
+
+/* Set the background to a texture */
+body {
+    background:  url(https://i.imgur.com/MJAkxbh.png);
+}
+
+/* Set the form text elements */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Set the form date elements */
+input[type=date] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(255, 122, 122);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, make the font bold and set a border */
+input[type=submit]:hover {
+    animation-name: background-color;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100% {
+        font-weight: bold;
+        border: 1px;
+    }
+}
+
+/* Set the Page Title */
+h1 {
+    font-size: 52px;
+    text-align: center;
+    font-family: Lobster, monospace;
+    color: rgb(255, 122, 122);
+}
+
+/* When moving the mouse over the page title, scale the page */
+h1:hover {
+    transform: scale(1.1);
+}
+
+/* Set the legend font style */
+legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Set the link style */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove bullet points from unstructured lists */
+ul {
+    list-style-type: none;
+}
+
+/* Set navigation style */
+#navigation {
+  text-align: center;
+}
+
+/* When moving the mouse over the link, change the color */
+a:hover {
+    color: rgb(255, 122, 122);
+}
+
+/* Set the form section to a relative position */
+section {
+    position: relative;
+}
+
+/* Set the label font family to Oswald */
+label {
+    font-family: Oswald, monospace;
+}
+
+/* Set the legend font family to Oswald */
+legend {
+    font-family: Oswald, monospace;
+}
